@@ -12,6 +12,30 @@ module.exports = function(app) {
      app.get('/about',function(req,res){
         res.render('about.html');
     });
+
+   app.get('/blog-details',function(req,res){
+      res.render('blog-details.html');
+   });
+    app.get('/blog',function(req,res){
+      res.render('blog.html');
+   });
+
+   app.get('/contact',function(req,res){
+      res.render('contact.html');
+   });
+
+   app.get('/index-2',function(req,res){
+      res.render('index-2.html');
+   });
+
+   app.get('/index',function(req,res){
+      res.render('index.html');
+   });
+
+   app.get('/updates',function(req,res){
+      res.render('updates.html');
+   });
+
      
     app.get('/listall', function (req, res) {
       //res.render('about.html');

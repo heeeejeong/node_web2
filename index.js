@@ -8,6 +8,6 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 app.use(express.static('public'));
 
-let server = app.listen(port, function(){
+let server = app.listen(port, function(){ // 실제 서버 구동
     console.log("Express server has started on port "+ port)
 });
